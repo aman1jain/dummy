@@ -1,0 +1,55 @@
+<aside class="sidenav sidenavLeft">
+  <nav class="">
+    <a mat-button routerLink="/" class="btn" (click)="sidenavToggle()"><i class="fa fa-home"></i>
+     
+   <span>Schema</span></a>
+  
+
+  </nav>
+  <div class="tools">
+    <h4>Table Title</h4>
+  </div>
+  <div class="tools">
+    <mat-form-field>
+      <input matInput placeholder="Search">
+    </mat-form-field>
+  </div>
+
+  <!-- <ol> -->
+    <!-- <li>
+      <mat-form-field>
+        <input matInput [(ngModel)]="name" placeholder="What's your name?">
+      </mat-form-field>
+    </li> -->
+
+    <div *ngIf="login === true">
+    <li>
+      <button mat-raised-button (click)="openDialog()">Table</button>
+    </li>
+    <!-- <li *ngIf="animal">
+      You chose: <i>{{animal}}</i>
+    </li> -->
+  <!-- </ol> -->
+  <!-- <thead>
+    <tr>
+      <th>ID</th>
+      <th>First name</th>
+      <th>Last name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Aman</td>
+      <td>jain</td>
+    </tr>
+    
+  </tbody> -->
+    </div>
+</aside>
+ 
+
+<!-- </div>
+</div>
+</div> -->
+<!-- </section> -->
